@@ -1,27 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raw Text File</title>
+  <meta http-equiv="refresh" content="0; url=https://raw.githubusercontent.com/batuhantrkgl/massgrave-hosted/refs/heads/main/active.txt" />
 </head>
 <body>
-  <pre>
-    <!-- This is where the content of your txt file will be displayed -->
-    <script>
-      // Fetch the raw text file from GitHub
-      fetch("https://raw.githubusercontent.com/batuhantrkgl/massgrave-hosted/main/active.txt")
-        .then(response => response.text())
-        .then(text => {
-          // Display the text content in the pre tag
-          document.querySelector("pre").textContent = text;
-        })
-        .catch(error => {
-          // Handle any errors
-          console.error("Error loading file:", error);
-          document.querySelector("pre").textContent = "Error loading file. Please check the file path.";
-        });
-    </script>
-  </pre>
 </body>
 </html>
